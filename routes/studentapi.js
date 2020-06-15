@@ -12,11 +12,11 @@ var router = express.Router();
 router.get('/:id', function(req, res, next) {
 ///todo check parameter .json
   res.json({
-      patient:req.params.id,
+      student:req.params.id,
   });
 });
 router.get('/',(req,res)=>{
-    res.json('all patient')
+    res.json('all students')
   });
 
 module.exports = router;
